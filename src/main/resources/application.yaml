@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:bpmdb
+    username: bpm
+    password: bpm
+    driverClassName: org.h2.Driver
+  jpa:
+    open-in-view: false
+    spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+camunda.bpm:
+  admin-user:
+    id: bpm
+    password: bpm
+    firstName: Bpm
+kafka:
+  groupConsumer:
+    topic: bpm-request
